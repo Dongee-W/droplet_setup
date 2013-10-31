@@ -66,12 +66,21 @@ ssh-keygen -t rsa -C "atfrontier@hotmail.com.tw"
 cat ~/.ssh/id_rsa.pub
 ```
 Go to github.com/setting/ssh and paste the key
+note:
+```
+git add .
+git commit -m "MESSAGE"
+git push origin BRANCH
+```
 
 ###hg setup
 add .hgrc file to home directory and edit the .hgrc file:
 ```
 [ui]
 username = Your Name <your@mail>
+```
+note:
+```
 hg push https://sctech@bitbucket.org/sctech/myrepo/
 ```
 
@@ -117,3 +126,9 @@ Defaults   env_keep += "PIP_REQUIRE_VIRTUALENV"
 Defaults   env_keep += "PIP_RESPECT_VIRTUALENV"
 ```
 兩行
+note:
+```
+mkvirtualenv NAME
+workon NAME
+deactivate
+```
