@@ -2,14 +2,14 @@ Droplet Setup
 ==========
 
 ```sh
-        cd $HOME
-        sudo apt-get install -y git-core
-        git clone https://github.com/sctech/droplet_setup.git
-        ./droplet_setup/setup.sh
+cd $HOME
+sudo apt-get install -y git-core
+git clone https://github.com/sctech/droplet_setup.git
+./droplet_setup/setup.sh
 ```
 ###Create user account
 ```
-        adduser YOUR_ID
+adduser YOUR_ID
 ```
 After setting the username and password, run:
 ```
@@ -58,36 +58,35 @@ add "YOUR_ID     ALL=(ALL:ALL) ALL" right after "root     LL=(ALL:ALL) ALL", exi
 
 ###git setup
 ```
-        git config --global user.name "sctech"
-        git config --global user.email "atfrontier@hotmail.com.tw"
-        git remote add origin git@github.com:sctech/myrepo.git
-          or
-        git remote add origin https://github.com/sctech/myrepo.git
-        ssh-keygen -t rsa -C "atfrontier@hotmail.com.tw"
-        cat ~/.ssh/id_rsa.pub
+git config --global user.name "sctech"
+git config --global user.email "atfrontier@hotmail.com.tw"
+git remote add origin git@github.com:sctech/myrepo.git
+    or
+git remote add origin https://github.com/sctech/myrepo.git
+ssh-keygen -t rsa -C "atfrontier@hotmail.com.tw"
+cat ~/.ssh/id_rsa.pub
 ```
-    Go to github.com/setting/ssh and paste the key
+Go to github.com/setting/ssh and paste the key
 
 ###hg setup
 1. add .hgrc file to home directory
 2. edit the .hgrc file :
 ```
-        [ui]
-        username = NAME <EMAIL>
+[ui]
+username = NAME <EMAIL>
 ```
 3. hg push https://sctech@bitbucket.org/sctech/myrepo/
 
 ###Virtualenv
-
 ```
-        sudo apt-get install python3 python3-dev
-        mkdir temp
-        cd temp
-        curl -O http://python-distribute.org/distribute_setup.py
-        sudo python3 distribute_setup.py
-        sudo easy_install pip
-        cd ~
-        rm -rf temp
+sudo apt-get install python3 python3-dev
+mkdir temp
+cd temp
+curl -O http://python-distribute.org/distribute_setup.py
+sudo python3 distribute_setup.py
+sudo easy_install pip
+cd ~
+rm -rf temp
 ```
 
 Add to `~/.bashrc`：
