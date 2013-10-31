@@ -69,10 +69,10 @@ Go to github.com/setting/ssh and paste the key
 
 ###hg setup
 1. add .hgrc file to home directory
-2. edit the .hgrc file :
+2. edit the .hgrc file:
 ```
 [ui]
-username = NAME <EMAIL>
+username = Your Name <your@mail>
 ```
 3. hg push https://sctech@bitbucket.org/sctech/myrepo/
 
