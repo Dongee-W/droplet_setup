@@ -65,7 +65,7 @@ git remote add origin https://github.com/sctech/myrepo.git
 ssh-keygen -t rsa -C "atfrontier@hotmail.com.tw"
 cat ~/.ssh/id_rsa.pub
 ```
-Go to github.com/setting/ssh and paste the key
+Go to github.com/setting/ssh and paste the key.
 note:
 ```
 git add .
@@ -125,7 +125,6 @@ export WORKON_HOME=~/.virtualenvs
 Defaults   env_keep += "PIP_REQUIRE_VIRTUALENV"
 Defaults   env_keep += "PIP_RESPECT_VIRTUALENV"
 ```
-兩行
 note:
 ```
 mkvirtualenv NAME
