@@ -68,13 +68,13 @@ cat ~/.ssh/id_rsa.pub
 Go to github.com/setting/ssh and paste the key
 
 ###hg setup
-1. add .hgrc file to home directory
-2. edit the .hgrc file:
+add .hgrc file to home directory
+edit the .hgrc file:
 ```
 [ui]
 username = Your Name <your@mail>
 ```
-3. hg push https://sctech@bitbucket.org/sctech/myrepo/
+hg push https://sctech@bitbucket.org/sctech/myrepo/
 
 ###Virtualenv
 ```
