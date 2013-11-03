@@ -26,7 +26,7 @@ add "YOUR_ID     ALL=(ALL:ALL) ALL" right after "root     LL=(ALL:ALL) ALL", exi
 
 3. copy files to your home directory:
 ```
-git clone git://github.com/sctech/vim.git
+git clone git://github.com/sctech/sctech-vim.git
 ```
 4. cd to `vim` directory and execute the `update.sh` to get latest version modules:
 ```
@@ -35,22 +35,9 @@ cd vim
 ```
 5. make a symbolic link `.vim` to `vim` that you just cloned, or just rename it to `.vim` also be fine:
 ```
-ln -s vim .vim
+ln -s sctech-vim .vim
 ```
-6. link the vimrc to
-```
-git clone git://github.com/sctech/vim.git
-```
-4. cd to `vim` directory and execute the `update.sh` to get latest version modules:
-```
-cd vim
-./update.sh
-```
-5. make a symbolic link `.vim` to `vim` that you just cloned, or just rename it to `.vim` also be fine:
-```
-ln -s vim .vim
-```
-6. link the vimrc to
+6. link the vimrc to `.vimrc`
 ```
 ln -s .vim/vimrc .vimrc
 ```
