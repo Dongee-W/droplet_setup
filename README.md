@@ -46,7 +46,7 @@ ln -s .vim/vimrc .vimrc
 ```
 sudo apt-get install -y git-core
 ```
-Configuration
+Configuration:
 ```
 git config --global user.name "sctech"
 git config --global user.email "atfrontier@hotmail.com.tw"
@@ -70,7 +70,7 @@ git push origin BRANCH
 ```
 sudo apt-get install mercurial
 ```
-add .hgrc file to home directory and edit the .hgrc file:
+Configuration: add .hgrc file to home directory and edit the .hgrc file:
 ```
 [ui]
 username = Your Name <your@mail>
