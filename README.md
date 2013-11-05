@@ -1,12 +1,6 @@
 Droplet Setup
 ==========
 
-```sh
-cd $HOME
-sudo apt-get install -y git-core
-git clone https://github.com/sctech/droplet_setup.git
-./droplet_setup/setup.sh
-```
 ###Create user account
 ```
 adduser YOUR_ID
@@ -15,11 +9,17 @@ After setting the username and password, run:
 ```
 visudo
 ```
-add "YOUR_ID     ALL=(ALL:ALL) ALL" right after "root     LL=(ALL:ALL) ALL", exit and reconnect.
+add "YOUR_ID     ALL=(ALL:ALL) ALL" right after "root     ALL=(ALL:ALL) ALL", exit and reconnect.
 
-
+###Upgrading packages before installing others
+```
+sudo apt-get update ;sudo apt-get upgrade
+sudo sync;sudo sync;sudo sync;sudo reboot
+```
 ###vim setup
-
+```
+sudo apt-get install vim
+```
 1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
 2. `cd ~` to change directory to your home directory.
@@ -44,6 +44,10 @@ ln -s .vim/vimrc .vimrc
 
 ###git setup
 ```
+sudo apt-get install -y git-core
+```
+Configuration
+```
 git config --global user.name "sctech"
 git config --global user.email "atfrontier@hotmail.com.tw"
 git remote add origin git@github.com:sctech/myrepo.git
@@ -55,12 +59,17 @@ cat ~/.ssh/id_rsa.pub
 Go to github.com/setting/ssh and paste the key.
 note:
 ```
+git init
+git status
 git add .
 git commit -m "MESSAGE"
 git push origin BRANCH
 ```
 
 ###hg setup
+```
+sudo apt-get install mercurial
+```
 add .hgrc file to home directory and edit the .hgrc file:
 ```
 [ui]
