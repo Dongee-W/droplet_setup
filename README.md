@@ -31,7 +31,7 @@ git clone git://github.com/sctech/sctech-vim.git
 4. cd to `vim` directory and execute the `update.sh` to get latest version modules:
 ```
 cd vim
-./update.sh
+sh update.sh
 ```
 5. make a symbolic link `.vim` to `vim` that you just cloned, or just rename it to `.vim` also be fine:
 ```
